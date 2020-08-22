@@ -16,7 +16,7 @@ var tweets = [
     "content" : "FIRST PERSON TO GET A CAT: haha this thing is an asshole I’m gonna keep it",
     "username" : "@thetators",
     "created_at" : "05/03/2016",
-    "age" : 27
+    "age" : 17
   },
   {
     "content" : "(to my date after each preview at a movie) the actual film will be much longer than that",
@@ -40,7 +40,7 @@ var tweets = [
     "content" : "my daily routine is very simple. i wake up and i suffer",
     "username" : "@650Br4ndon",
     "created_at" : "06/27/2020",
-    "age" : 30
+    "age" : 16
   },
   {
     "content" : "call me zack cuz idk what the effron with me",
@@ -58,16 +58,42 @@ var tweets = [
    "content" : "Taking inspiration from birds and every few minutes just letting out a big scream",
    "username" : "@figgled",
    "created_at" : "04/29/2020",
-   "age" : 19 
+   "age" : 15 
   }
 ];
 
 // For loop to iterate through array
 
-for(var counter = 0; counter < tweets.length; counter++) {
-  console.log(tweets[counter].content);
-  console.log(tweets[counter].username);
-  console.log(tweets[counter].created_at);
+// for(var counter = 0; counter < tweets.length; counter++) {
+//       console.log(tweets[counter].content);
+//       console.log(tweets[counter].username);
+//       console.log(tweets[counter].created_at);
+//   }
+
+
+// W9E //
+function checkOverEighteen(user) {
+      if(user.age >= 18) {
+          return true;
+      } else if(user.age < 18) {
+          return false;
+      } else {
+          console.log("Oops! There's been an error.")
+      }
 }
+
+
+var isOverEighteen = tweets.filter(checkOverEighteen);
+console.log(isOverEighteen);
+
+
+
+
+
+
+
+
+
+
 
 
